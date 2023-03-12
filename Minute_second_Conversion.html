@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+                h1{
+                    text-align: center;
+
+                }
+                body{
+                    background-color: white;
+                    background-image: url('clock_background.jpeg');
+                }
+                .kit{
+                    width: 500px;
+                    height: 300px;
+                    border: 20px;
+                    border-color: red;
+                    background-color: lightgreen;
+                    align-items: center;
+                    margin-left: 35%;
+                    
+
+                }
+                
+               #Woman{
+               padding-left: 50px;
+                width: 350px;
+                height: 350px;
+               margin-right: 50%;
+
+                }
+
+                #Woman{
+                    width: 300px;
+                    height: 300px;
+                  
+                }
+             
+
+        </style>
+        <script>
+                function Convert(){
+                    var minute;
+                    minute=parseInt(document.getElementById("num").value);
+                    var x=(minute)*60;
+                    console.log(x);
+                    document.getElementById("demo").innerHTML=x;
+                 
+                }
+
+
+
+        </script>
+        <body>
+                <h1>Welcome To Minute To Second Conversion</h1>
+                <div class="kit">
+                    <form>
+                        <h1><label for="num">Minute</label></form><h1>
+                      <input type="number" id="num" placeholder="Enter Minute">
+                      <br><br><br>
+                        <input type="button" value="submit" onclick="Convert()" />
+                        <h1 id="demo">The value in Seconds is</h1> 
+                       
+                    </form>
+                    
+                </div>
+                <br><br>
+                <img src="Woman.jpeg" id="Woman"/>
+                <img src="minute_clock.jpeg" id="minute_clock"/>
+               
+        </body>
+    </head>
+</html>
